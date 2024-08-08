@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .rainbow {
+            font-size: 40px;
+            line-height: 5;
+        }
+
+        .rainbow span {
+            /*display: inline-block; 을 해주면 width, height 설정 가능*/
+            text-align: center;
+            padding: 40px;
+        }
+
+        .rainbow :first-child, .rainbow :last-child {
+            border: black 40px solid;
+        }
+
+        .rainbow :nth-child(even) {
+            color: white;
+        }
+
+        .rainbow :nth-child(1) {
+            background-color: red;
+        }
+
+        .rainbow :nth-child(2) {
+            background-color: orange;
+        }
+
+        .rainbow :nth-child(3) {
+            background-color: yellow;
+        }
+        .rainbow :nth-child(4) {
+            background-color: green;
+        }
+        .rainbow :nth-child(5) {
+            background-color: blue;
+        }
+        .rainbow :nth-child(6) {
+            background-color: darkblue;
+        }
+        .rainbow :nth-child(7) {
+            background-color: purple;
+        }
+
+        .ul {
+            font-size: 40px;
+        }
+
+        .li::before {
+            content: "💙";
+        }
+
+        .li::after {
+            content: "강사님";
+            font-size: 0.5em;
+            color: gray;
+        }
+
+        .ul :first-child::before {
+            content: "🥪";
+        }
+        /*
+        li:first-child::before{
+            content: "💕";
+        }
+
+        li:not(:first-child)::before{
+            content: "😮";
+        }
+        */
+    </style>
+</head>
+<body>
+<div class="rainbow">
+    <span class="red">빨강</span>
+    <span class="orange">주황</span>
+    <span class="yellow">노랑</span>
+    <span class="green">초록</span>
+    <span class="blue">파랑</span>
+    <span class="darkblue">남색</span>
+    <span class="purple">보라</span>
+</div>
+
+<br>
+
+<ul class="ul">
+    <li class="li">지지</li>
+    <li class="li">로지</li>
+    <li class="li">라이캣</li>
+    <li class="li">개리</li>
+</ul>
+
+
+</body>
+</html>

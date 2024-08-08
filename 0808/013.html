@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        p{
+            width: 300px;
+            border: solid 1px black;
+            /*왼쪽 정렬*/
+            text-align: left;
+            /*오른쪽 정렬*/
+            text-align: right;
+            /*가운데 정렬*/
+            text-align: center;
+            /*양쪽 정렬*/
+            /*양쪽 정렬이다 보니 글자 간 간격이 달라지니 사용에 유의*/
+            text-align: justify;
+            /*대부분의 브라우저에서 호환X => 왜 있냐?*/
+            text-align: justify-all;
+
+            /*행간 설정*/
+            /*요소의 글꼴 크기에 대한 배수*/
+            line-height: 2;
+            /*브라우저 기본값(1.2)*/
+            /*line-height: normal;*/
+
+            /*자간 설정*/
+            /*px / em / 음수 모두 사용 가능*/
+            letter-spacing: 5px;
+        }
+
+        span{
+            font-size: 50px;
+            border: 1px black solid;
+            line-height: 80px;
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        /*기본값*/
+        /*수직 정렬*/
+        /*그냥 나중에 배울 flex써라*/
+        .baseline{
+            vertical-align: baseline;
+        }
+
+        .sub{
+            vertical-align: sub;
+        }
+        .super{
+            vertical-align: super;
+        }
+        .top{
+            vertical-align: top;
+        }
+        .middle{
+            vertical-align: middle;
+        }
+        .bottom{
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis ex id nemo, obcaecati quos rem tempore
+    velit?
+    Accusantium ea explicabo nisi nostrum odio perferendis ut. Beatae cum in placeat.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nobis nostrum ratione vitae. Aut debitis ea,
+    eveniet explicabo ipsa quidem quod repellat reprehenderit ullam. A fuga maiores necessitatibus quisquam recusandae?
+</p>
+
+<span>부모<span class="baseline">baseline</span></span><br>
+<span>부모<span class="sub">sub</span></span><br>
+<span>부모<span class="super">super</span></span><br>
+<span>부모<span class="top">top</span></span><br>
+<span>부모<span class="middle">middle</span></span><br>
+<span>부모<span class="bottom">bottom</span></span><br>
+
+</body>
+</html>

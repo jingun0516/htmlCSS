@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .key {
+            color: blue;
+        }
+
+        /* #RRGGBB*/
+        /* 흰색 #ffffff == #fff 검은색 #000000 == #000 */
+        /*#ff0000 == #f00*/
+        .code {
+            color: #ff0000;
+        }
+
+        /* red, green, blue 순 0~255*/
+        .rgb {
+            color: rgb(0, 255, 0);
+        }
+
+        /* red, green, blue, alpha(투명도) */
+        /*alpha값은 (투명) 0~1 (불투명)*/
+        .rgba {
+            color: rgb(0, 0, 255, 0.2);
+        }
+
+        /*transparent (투명)*/
+        .trans {
+            color: transparent;
+        }
+
+        div {
+            color: aqua;
+        }
+
+        p{
+            border: 1px solid currentColor;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p class="key">안녕</p>
+    <p class="code">안녕</p>
+    <p class="rgb">안녕</p>
+    <p class="rgba">안녕</p>
+    <p class="trans">안녕</p>
+</div>
+</body>
+</html>

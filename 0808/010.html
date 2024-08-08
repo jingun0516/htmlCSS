@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*가상 요소는 돔 트리? 라는 거에 포함이 안 되는 허상? 의 요소..?*/
+        p::before{
+            content: "오르미 6기 여러분";
+            font-size: 24px;
+            color: hotpink;
+        }
+
+        p::after{
+            content: "★";
+        }
+
+        /*img, br, input 태그는 빈태그이므로 가상 요소 적용 X*/
+        img::after{
+            content: "★";
+        }
+
+        br::after{
+            content: "★";
+        }
+
+        input::after{
+            color:blue;
+        }
+
+        input::placeholder{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+<p>
+    <strong>안녕하세요</strong>
+</p>
+<p>
+    <strong>예~안녕하세요</strong>
+</p>
+
+<img src="https://i.namu.wiki/i/SfZFwiGqgQH1ndZ8E3eyo5ll4WGmagoA50v4LCPLW26j9sA0o6sKdyvsWdAvYINvkbhGRl1PlkYfIyqFYHnRRc-rhu_J-FAYjUP-kBo5de2jJNcayH4c8rTGPWkM5QYVFNwfkzwE1i7IdAQX0V0tiQ.webp" alt="">
+<br>
+<input type="text" placeholder="비밀번호 작성해라">
+
+</body>
+</html>

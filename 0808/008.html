@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html {
+            font-size: 8px;
+        }
+
+        .container{
+            font-size: 10px;
+        }
+
+        .container div{
+            border: 1px solid black;
+        }
+
+        /*부모 요소의 폰트 사이즈: 10px (container)*/
+        /*2em = 20px*/
+        .item1{
+            font-size: 2em;
+        }
+
+        /*root html의 폰트 사이즈: 8px (html)*/
+        /*2rem = 16px*/
+        .item2{
+            font-size: 2rem;
+        }
+
+        /*유지보수성을 위해 em, rem 단위를 적절하게 사용*/
+        /*아래처럼 작업하면 직접 수정해야 하니 귀찮거나 놓칠 수 있겠지*/
+        /*
+        p{
+            font-size: 16px;
+        }
+
+        div{
+            font-size: 12px;
+        }
+
+        span{
+            font-size: 14px;
+        }
+        */
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="item1">
+      Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Enim repudiandae nostrum illo,
+      eos commodi modi quis vel animi harum porro reiciendis unde itaque autem,
+      accusamus nihil aperiam, ab quaerat quasi.
+  </div>
+  <div class="item2">
+    Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Enim repudiandae nostrum illo,
+    eos commodi modi quis vel animi harum porro reiciendis unde itaque autem,
+    accusamus nihil aperiam, ab quaerat quasi.
+  </div>
+</div>
+</body>
+</html>
