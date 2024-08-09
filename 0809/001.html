@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            /*width를 입력하지 않으면 부모 요소의 너비를 기준으로 계산하여 가득 채움*/
+            width: 100px;
+            /*height를 입력하지 않으면 width와는 다르게 content의 높이만큼만 설정*/
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .box2{
+            background-color: blue;
+            /*상 우 하 좌, 시계방향, padding: 테두리 안쪽의 여백*/
+            padding: 1px 2px 3px 4px;
+            /*상 좌우 하*/
+            padding: 10px 10px 10px;
+            /*상하 좌우*/
+            padding: 10px 10px;
+            /*상하좌우*/
+            padding: 50px;
+            /*padding-top: 10px.... right bottom left 따로 지정 가능*/
+
+            /*margin: 테두리 바깥(border)의 여백*/
+            /*padding이랑 사용법 똑~같음*/
+            margin: 30px;
+        }
+
+        .box3{
+            height: 100px;
+            background-color: antiquewhite;
+        }
+
+        .box3 p{
+            width: 200px;
+            background-color: aqua;
+            /*가운데 배치*/
+            /*margin: auto;*/
+            /*오른쪽 배치*/
+            margin-left: auto;
+        }
+
+        .border1, .border2, .border3{
+            display: inline-block;
+            padding: 15px 25px;
+        }
+
+        .border1{
+            /*solid 실선*/
+            border: 5px groove black;
+            border-radius : 10px 15px 20px;
+        }
+        .border2{
+            /*dashed 점선 (- - - - -) */
+            border: 5px dashed black;
+        }
+        .border3{
+            /*dotted 점선 (........) */
+            border: 2px dotted rgb(12, 97, 255);
+        }
+    </style>
+</head>
+<body>
+<div class="box1">box1</div>
+<div class="box2">box2</div>
+<div class="box3">
+    <p>margin을 사용한 요소배치</p>
+</div>
+
+<p class="border1">Hello</p>
+<p class="border2">Hello</p>
+<p class="border3">Hello</p>
+</body>
+</html>

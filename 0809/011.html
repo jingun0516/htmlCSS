@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            background-color: #eee;
+            height: 500px;
+            padding: 10px;
+            display: flex;
+            /*row row-reverse column column-reverse*/
+            /*reverse 사용 지양할 것*/
+            flex-direction: row;
+            /*direction의 중앙을 기준으로 정렬*/
+            justify-content: center;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            /*item 사이에 동일한 간격 설정하여 꽉 채움*/
+            justify-content: space-between;
+            /*item 주변에 동일한 간격 설정하여 꽉 채움*/
+            justify-content: space-around;
+            /*!*item 사이와 양끝 모두 동일한 간격 설정하여 꽉 채움*!*/
+            justify-content: space-evenly;
+
+            /*align-items: stretch;*/
+            /*align-items: flex-start;*/
+            /*align-items: flex-end;*/
+            /*align-items: center;*/
+            /*!*align-items: baseline;*!*/
+            gap: 20px;
+            /*!* 줄바꿈을 안 하고 item width를 줄일거야*!*/
+            /*flex-wrap: nowrap;*/
+            /*!* 줄바꿈을 하고 item width를 건들지 않을거야*!*/
+            flex-wrap: wrap;
+
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: solid 1px black;
+
+            text-align: center;
+            line-height: 100px;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+</div>
+</body>
+</html>

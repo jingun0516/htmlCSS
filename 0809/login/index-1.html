@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link rel="stylesheet" href="../../reset.css"/>
+    <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+    body{
+        font-family: "Spoqa Han Sans Neo", "sans-serif";
+    }
+    .login-wrap{
+        width: 350px;
+        height: 140px;
+        border-radius: 5px;
+        border: 1px solid #DBDBDB;
+        padding: 19px 16px 18px;
+        font-size: 12px;
+        box-sizing: border-box;
+    }
+    .btn-login{
+        margin: 16px 0;
+        background-color: #711BFF;
+        border-radius: 4px;
+        height: 40px;
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-login img{
+        width: 64px;
+        margin-right: 4px;
+    }
+
+    .login-link{
+        color: #767676;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .login-link img{
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+    }
+
+    .login-link span{
+        margin: 0 4px;
+    }
+
+    .login-link div{
+        display: flex;
+        align-items: center;
+    }
+
+</style>
+<body>
+<section class="login-wrap">
+<!--    ir 기법을 사용하여 헤딩태그 숨기기-->
+<!--    <h2>로그인</h2>-->
+    <p>더 편리해진 위니브에 오신 것을 환영합니다.</p>
+    <a href="#" class="btn-login">
+        <img src="./images/weniv-logo.png" alt="weniv">
+        로그인
+    </a>
+    <div class="login-link">
+        <div>
+            <img src="./images/icon-lock.png" alt="아이디 찾기">
+            <a href="#">
+                아이디
+            </a>
+            <span>|</span>
+            <a href="#">비밀번호찾기</a>
+        </div>
+        <div>
+            <img src="./images/icon-user.png" alt="">
+            <a href="#">
+                회원가입
+            </a>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

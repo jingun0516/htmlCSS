@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .background {
+            width: 500px;
+            height: 300px;
+
+            background-color: aquamarine;
+            /*배경에 이미지 적용*/
+            background-image: url(https://i.namu.wiki/i/SfZFwiGqgQH1ndZ8E3eyo5ll4WGmagoA50v4LCPLW26j9sA0o6sKdyvsWdAvYINvkbhGRl1PlkYfIyqFYHnRRc-rhu_J-FAYjUP-kBo5de2jJNcayH4c8rTGPWkM5QYVFNwfkzwE1i7IdAQX0V0tiQ.webp);
+            /*배경 이미지 크기 조정*/
+            background-size: 200px 100px;
+            /* 이미지 비율 유지, 안 짤리게끔 */
+            background-size: contain;
+            /*이미지 비율 유지, 짤림 상관X*/
+            /*background-size: cover;*/
+            /* default: repeat / repeat-x / repeat-y */
+            background-repeat: no-repeat;
+            /*!*background-position: 100px 200px;*!*/
+            /*background-position: center;*/
+            /*background-position: top;*/
+            /*background-position: left;*/
+
+        }
+
+        .gradient {
+            width: 500px;
+            height: 300px;
+            /*https://cssgradient.io/*/
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(5, 90, 175, 1) 61%, rgba(174, 58, 205, 1) 75%, rgba(0, 212, 255, 1) 100%);
+        }
+    </style>
+</head>
+<body>
+<div class="background"></div>
+<div class="gradient"></div>
+</body>
+</html>

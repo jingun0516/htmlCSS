@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            color: white;
+            text-align: center;
+        }
+
+        .container{
+            background-color: #336df2;
+            width: 500px;
+            height: 500px;
+            padding: 10px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        header{
+            background-color: skyblue;
+            flex: 1;
+        }
+        .main{
+            display: flex;
+            flex: 2;
+            flex-direction: row;
+            gap: 10px;
+        }
+        footer{
+            background-color: hotpink;
+            flex: 1;
+        }
+        section{
+            background-color: purple;
+            flex: 2;
+        }
+        aside{
+            background-color: greenyellow;
+            flex: 1;
+            color: black;
+        }
+
+        /*글자 정렬*/
+        header, footer, section, aside{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>header</header>
+    <div class="main">
+        <section>section > article</section>
+        <aside>aside</aside>
+    </div>
+    <footer>footer</footer>
+</div>
+</body>
+</html>
