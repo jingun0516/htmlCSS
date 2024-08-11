@@ -5,8 +5,20 @@
     <title>1만 시간의 법칙</title>
     <link rel="stylesheet" href="../reset.css" />
     <style>
-        body{
-            text-align: center;
+        @font-face {
+            font-family: 'OTEnjoystoriesBA';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: Gmarket Sans;
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .main{
+            position: relative;
             width: 1920px;
             height: 1963px;
             background: #5B2386;
@@ -17,83 +29,240 @@
             position: absolute;
             width: 261px;
             height: 265px;
-            top: 199px;
-            left: 830px;
-            padding: 20px 19.7px 20px 19.7px;
+            margin: 199px 829px 1453px 830px;
+
         }
         .frame{
             position: absolute;
             width: 564px;
             height: 112px;
-            top: 273px;
-            left: 678px;
-            gap: 0px;
+            margin: 273px 678px 1532px;
         }
-
-        .secondline{
-            /*font-family: tvN Enjoystories;*/
+        .a-practice{
+            position: absolute;
+            font-family: 'OTEnjoystoriesBA';
+            width: 480px;
+            height: 40px;
             font-size: 36px;
             font-weight: 700;
             line-height: 39.6px;
+            text-align: center;
+            color: #F5DF4D;
+            margin: 510px 717px 1367px
         }
-
-        .law{
+        .a-10000{
+            position: absolute;
+            width: 373px;
+            height: 85px;
+            margin: 628px 773px 1204px 774px;
             font-family: Gmarket Sans;
             font-size: 24px;
             font-weight: 700;
             line-height: 24px;
             text-align: center;
         }
-        .law span{
+        .a-10000 span{
             font-family: Gmarket Sans;
             font-size: 18px;
             font-weight: 400;
             line-height: 18px;
             text-align: center;
         }
+        #따옴표{
+            position: absolute;
+            width: 493px;
+            height: 96px;
+            margin: 641px 713px 1180px 714px;
+        }
+        .group4{
+            /*width: 514px;*/
+            height: 57px;
+            position: absolute;
+            top: 815px;
+            left: 703px;
+            /*margin: 815px 703px 1045px;*/
+        }
+        .group5{
+            /*width: 765px;*/
+            height: 57px;
+            position: absolute;
+            top: 899px;
+            left: 578px;
+            /*margin: 899px 577px 961px 578px;*/
+        }
+        .group4, .group5{
+            font-family: Gmarket Sans;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .group4 input, .group5 input{
+            width: 228px;
+            height: 57px;
+            border-radius: 7px;
+        }
+        .group4 input::placeholder, .group5 input::placeholder{
+            color: #BABCBE;
+            font-family: Gmarket Sans;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+        }
+        .frame8 {
+            border-radius: 56px;
+            background: #FCEE21;
+            padding: 21px 49px;
+            position: absolute;
+            top: 1071px;
+            left: 678px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            gap:10px;
+        }
+        .frame8 button{
+            font-family: Gmarket Sans;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            /*padding: 21px 49px;*/
+            color: #5B2386;
+
+        }
+        .frame11 {
+            width: 64px;
+            height: 72px;
+            position: absolute;
+            top: 1085px;
+            left: 1250px;
+            /*margin: 1085px 606px 760px 1250px;*/
+        }
+        .frame6{
+            position: absolute;
+            margin: 1284px 628px 561px 629px;
+            font-family: Gmarket Sans;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+        }
+        .frame7{
+            position: absolute;
+            margin: 1373px 689px 472px 690px;
+            font-family: Gmarket Sans;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+        }
+        .frame6 span, .frame7 span{
+            font-family: Gmarket Sans;
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 72px;
+            text-align: left;
+        }
+        .frame9{
+            position: absolute;
+            top: 1572px;
+            left: 678px;
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+        }
+        .frame9 button{
+            color: #5B2386;
+            font-family: Gmarket Sans;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 56px;
+            padding: 21px 49px;
+        }
+        .frame9 .btn-frame9{
+            background-color: #FCEE21;
+        }
+        .frame9 .btn-frame9-2{
+            background-color: #FFF;
+        }
+        footer img{
+            position: absolute;
+            top: 1768px;
+            left: 897px;
+        }
+        footer p{
+            position: absolute;
+            top: 1813px;
+            left: 778px;
+            font-family: Noto Sans KR;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17.38px;
+            text-align: center;
+
+        }
+
     </style>
 </head>
 <body>
+<div class="main">
 <header>
     <img src="./images/Frame12.png" alt="frame12" class="frame12">
     <img src="./images/Frame.png" alt="일만시간의 법칙" class="frame">
 </header>
-<br>
-<main>
-    <a class="secondline">“연습은 어제의 당신보다 당신을 더 낫게 만든다.”</a>
-    <div>
-    <pre class="law">
-        1만 시간의 법칙<span>은
-        어떤 분야의 전문가가 되기 위해서는
-        최소한 1만 시간의 훈련이 필요하다는 법칙이다.</span>
-    </pre>
-    </div>
-    <br>
-    <div>
-        나는 <input type="text" placeholder="예)프로그래밍"> 전문가가 될 것이다.<br>
-        그래서 앞으로 매일 하루에 <input type="text" placeholder="예)5시간"> 시간씩 훈련할 것이다.
-
-        <br>
-        <button class="timebutton">나는 며칠동안 훈련을 해야 1만 시간이 될까?</button>손가락이미지
-    </div>
-
-    <div>
-    <pre>
-        당신은 <b>프로그래밍</b> 전문가가 되기 위해서
-        대략 <b>5110</b>일 이상 훈련하셔야 합니다! :)
-    </pre>
-        <button class="letsgobutton">훈련하러 가기 GO!GO!</button>
-        <button class="sharebutton">공유하기</button>
-    </div>
+    <main>
+        <div class="a-practice">
+        <p>
+        "연습은 어제보다 당신을 더 낫게 만든다."
+        </p>
+        </div>
+        <div class="a-10000">
+        <p>
+            1만 시간의 법칙<span>은<br> 어떤 분야의 전문가가 되기 위해서는<br> 최소한 1만 시간의 훈련이 필요하다는 점이다.</span>
+        </p>
+        </div>
+        <img src="./images/따옴표.png" alt="따옴표" id="따옴표">
+        <div class="group4">
+        <p>
+            나는 <input type="text" class="programming" placeholder="예)프로그래밍"> 전문가가 될 것이다.
+        </p>
+        </div>
+        <div class="group5">
+        <p>
+            그래서 앞으로 매일 하루에 <input type="text" class="fiveh" placeholder="예)5시간"> 시간씩 훈련할 것이다.
+        </p>
+        </div>
+        <div class="frame8">
+            <button>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+        </div>
+        <img src="./images/Frame11.png" alt="손가락" class="frame11">
+        <div class="frame6">
+            <p>
+                당신은 <span>프로그래밍</span> 전문가가 되기 위해서
+            </p>
+        </div>
+        <div class="frame7">
+            <p>
+                대략 <span>5110</span>일 이상 훈련하셔야 합니다! :)
+            </p>
+        </div>
+        <div class="frame9">
+            <button class="btn-frame9">훈련하러 가기 GO!GO!</button>
+            <button class="btn-frame9-2">공유하기</button>
+        </div>
+    </main>
     <footer>
-        <h2>weniv</h2>
-        <br>
-        <pre>
-        ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.
+        <img src="./images/위니브.png" alt="위니브">
+        <p>
+        ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br>
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
-        </pre>
+        </p>
     </footer>
-
-</main>
+</div>
 </body>
 </html>
